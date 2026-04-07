@@ -12,7 +12,7 @@ import json
 import datetime
 
 # ===== FIREBASE =====
-firebase_key = json.loads(os.environ["firebase-key.json"])
+firebase_key = json.loads(os.environ["FIREBASE_KEY"])
 
 if not firebase_admin._apps:
     cred = credentials.Certificate(firebase_key)
